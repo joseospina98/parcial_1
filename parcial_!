@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+
+bool esNumeroInteligente(int num) {
+    int n = 1;
+    while (true) {
+        int Sn = (n * (n + 1)) / 2 + 1; e
+        if (Sn == num) return true;  
+        if (Sn > num) return false;  
+        n++;
+    }
+}
+
+int main() {
+    int numero;
+    cout << "Ingrese un numero: ";
+    cin >> numero;
+
+    if (esNumeroInteligente(numero)) {
+        cout << numero << " es un numero inteligente." << endl;
+    } else {
+        cout << numero << " no es un numero inteligente." << endl;
+    }
+
+    return 0;
+}
